@@ -24,7 +24,7 @@ There are be three steps:
 
 Developers [Roadmap](https://docs.google.com/document/d/19pRF6gML9Gd5t4NncPKjQXDEK2665yVQXOFw-Ckvzp0/edit?usp=sharing)
 
-Designers [Roadmap](https://docs.google.com/document/d/1YL0Rwm_6ZIpF-uMk887ElBv_TaUnrZ1gJTBQC7985Xc/edit?usp=sharing)
+Designers [Roadmap](https://docs.google.com/document/d/1s8NnAIA3kpAKYan4o267_Y7fTNko_-am0GAHz0DnSeI/edit?usp=sharing)
 
 
 ### Technologies 
