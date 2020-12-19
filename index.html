@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Roku Flashback</title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+    <header>
+        <div class="navContainer navContainerItem">
+        <div class="logo">
+            <a href="./index.html"><img src="" alt="logo"></a>
+        </div>
+        
+
+        <nav>
+            <ul>
+                <li><a href="adultMovies.html">Movies</a></li>
+                <li><a href="adultMusic.html">Music</a></li>
+            </ul>
+        </nav>
+        </div>
+    </header>
+
+    <main id="app">
+        <div class="container-placeholder">
+            <div class="container-placeholder area">
+                <datacomponent v-for="item in media" :item="item" :key="item.id"  @setmediatype="setComponent"></datacomponent>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-logo">
+            <a href="./index.html"><img src="" alt="logo"></a>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script defer src="js/main.js" type="module"></script>
+    
+</body>
+</html>
