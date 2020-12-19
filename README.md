@@ -22,9 +22,9 @@ There are be three steps:
 2. Adult
 3. Kids
 
-Developers[Roadmap](https://docs.google.com/document/d/19pRF6gML9Gd5t4NncPKjQXDEK2665yVQXOFw-Ckvzp0/edit?usp=sharing)
+Developers [Roadmap](https://docs.google.com/document/d/19pRF6gML9Gd5t4NncPKjQXDEK2665yVQXOFw-Ckvzp0/edit?usp=sharing)
 
-Designers[Roadmap](https://docs.google.com/document/d/1YL0Rwm_6ZIpF-uMk887ElBv_TaUnrZ1gJTBQC7985Xc/edit?usp=sharing)
+Designers [Roadmap](https://docs.google.com/document/d/1YL0Rwm_6ZIpF-uMk887ElBv_TaUnrZ1gJTBQC7985Xc/edit?usp=sharing)
 
 
 ### Technologies 
