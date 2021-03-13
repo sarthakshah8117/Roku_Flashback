@@ -16,8 +16,19 @@ router.get('/', (req, res) => {
     
 })
 
-router.get('/portfolio', (req, res) => {
-    res.render('artwork', {portmessage: "you are on portfolio page"})
+router.get('/music', (req, res) => {
+    res.render('music', {music: "fav music!"})
+    
+})
+
+router.get('/TVshows', (req, res) => {
+    res.render('TVshows', {message: "Watch TV here!"})
+    
+})
+
+router.use((req, res) => {
+    res.status(404);
+    res.render("error", { layout: "errorLayout.hbs", errormessage: `you have lost your way! "${req.url}" doesn't exists!`})
 })
 
 module.exports = router;

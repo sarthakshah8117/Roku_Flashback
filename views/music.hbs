@@ -1,0 +1,4 @@
+<section class="music-section">
+    <p class="main-title">Music {{musicMessage}}</p>
+    <musicthumb v-for="item in allMusic" :music="item" :key="item.id"></musicthumb>
+</section>
