@@ -1,4 +1,17 @@
 <section class="music-section">
-    <p class="main-title">Music {{musicMessage}}</p>
-    <musicthumb v-for="item in allMusic" :music="item" :key="item.id"></musicthumb>
+    <p class="main-title">Feel the Retro music</p>
+    <div class="music-container">
+        <musicthumb @showmydata="imageSelected"  v-for="item in allMusic" :music="item" :key="item.id"></musicthumb>
+    </div>
+</section>
+<section class="audio-section">
+    <div :class="{'show-data' : show_bio_data }" v-show="hide_first_data">
+        <clickmusic :format="musicpdb.song_format" :name="musicpdb.song_name" :musicbar="musicpdb.thumbnail" :key="id"></clickmusic>
+    </div>
+
+    <div class="audio-bar" v-show="show_default_data">
+        <div class="audio">
+            <audio class='stopVideo' src="" controls></audio>
+        </div>
+    </div>
 </section>

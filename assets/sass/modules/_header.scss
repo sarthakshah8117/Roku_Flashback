@@ -1,80 +1,27 @@
-// .main-header{
-//     nav{
-//         background-color: black;
-//     }
-
-//     nav ul li:hover {
-//         background-color: white;
-//         color: red;
-//     }
-
-//     li.active-nav{
-//         background-color: grey;
-//     }
-// }
-
-// a.logo {
-//     font-family: 'Courier New', Courier, monospace;
-//     font-weight: bolder;
-//     letter-spacing: 2px;
-// }
-
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
-
-li, a, button {
-    font-family: "Roboto", sans-serif;
-    font-weight: 500;
-    font-size: 16px;
-    color: white;
-    text-decoration: none;
-
-}
-
-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+.main-header{
+    nav{
+        background-color: #292929;
+    }
     
+    nav ul li:hover {
+        background-color: wheat;
+        color: rebeccapurple;
+     }
+
+     li.active-nav{
+        background-color: rgba(white, 0.45);
+    }
 }
 
-.logo {
-    cursor: pointer;
-    a {    font-weight: bolder;
+a.brand-logo{
+    font-family: "Orbitron", sans-serif;
+    font-weight: bolder;
     letter-spacing: 2px;
-    font-size: 2.2rem;
-    color: #00ccff;
+}
+
+.dropdown-content{
+    margin-top: 20px;
+    a{
+        color: #000;
     }
-
-}
-
-.nav__links {
-    list-style-type: none;
-
-    li {
-        display: inline-block;
-        padding: 0px 20px;
-
-        a{
-            transition: all 0.3s ease 0s;
-        }
-
-        :hover {
-            color: #0088a9;
-        }
-    }
-
-
-}
-
-button {
-    padding: 9px 25px;
-    background-color: rgba(0,136,169,1);
-    border: none;
-    border-radius: 50px;
-    cursor: pointer;
-    transition: all 0.3s ease 0s;
-
-    :hover {
-    background-color: rgba(0,136,169,0);
-}
 }

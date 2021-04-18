@@ -1,43 +1,85 @@
+
 import Vue from 'https://cdn.jsdelivr.net/npm/vue@2.6.12/dist/vue.esm.browser.js';
-import TheMovieThumb from './components/TheMovieThumbnailComponent.js';
-import TheMusicThumb from './components/TheMusicThumbnailComponent.js';
+import TheMovieThumb from './components/TheMovieThumbnailComp.js';
+import TheShowThumb from './components/TheShowThumbnailComp.js';
+import TheMusicThumb from './components/TheMusicThumbnailComp.js';
+import onclickmusic from './components/PlayMusic.js';
+import ThePopMovieData from './components/popMovieData.js';
+import ThePopShowData from './components/ThePopShowData.js';
 
+  (()=>{
+      const vm = new Vue({
+          data:{
+              allMovies: [],
+              allMusic: [],
+              allShows:[],
+              moviesdb:{},
+              musicpdb: {},
+              showsdb:{},
+              show_movie_data: false,
+              show_bio_data: false,
+              show_default_data: true,
+              hide_first_data: false
+          },
+          created: function(){
+              console.log("inside Vue Js");
+              fetch('/api/movies')
+                    .then(res=>res.json())
+                    .then(data=>{
+                        console.table(data);
+                        this.allMovies = data;
+                    })
+              fetch('/api/music')
+                    .then(res=>res.json())
+                    .then(data=>{
+                        console.table(data);
+                        this.allMusic = data;
+                    })
+              fetch('/api/shows')
+                    .then(res=>res.json())
+                    .then(data=>{
+                        console.table(data);
+                        this.allShows = data;
+                    })
+              .catch(err=>console.error(err));
+          },
 
-(() => {
-    const vm = new Vue({
-        data: {
-            allMovies: [],
-            allMusic: []
+          methods:{
+            
+            imageSelected(item){
+                console.log("Thumbnail /image Selected:", item.song_name);
+                this.show_bio_data = true;
+                this.musicpdb = item;
+                this.show_default_data = false;
+                this.hide_first_data = true;
+                
+            },
 
-        },
+            movieImageSelected(item){
+                console.log("Thumbnail movie image Selected:", item.movies_title);
+                this.show_movie_data = true;
+                this.moviesdb = item;
+            },
+            // Show Thumb-> Image
+            showImageSelected(item){
+                console.log("Thumbnail show image Selected:", item.shows_title);
+                this.show_movie_data = true;
+                this.showsdb = item;
+            },
 
-        created: function() {
-            fetch('/api/movies')
-            .then(res => res.json())
-            .then(data => {
-                console.table(data);
-                this.allMovies = data;
-            })
+            closePopup(){
+                document.querySelector('.pop-box').classList.add('closepopup');
+                this.show_movie_data = false;
+            }
+          },
 
-            fetch('/api/music')
-            .then(res => res.json())
-            .then(data => {
-                console.table(data);
-                this.allMusic = data;
-            })
-            .catch(err => console.error(err));
-        },
-
-        methods: {
-
-        },
-
-        components: {
-            moviethumb: TheMovieThumb,
-            musicthumb: TheMusicThumb
-
-        }
-
-    }) .$mount("#app");
-
-})();
+          components:{
+              moviethumb: TheMovieThumb,
+              musicthumb: TheMusicThumb,
+              clickmusic: onclickmusic,
+              popupmovie: ThePopMovieData,
+              showthumb: TheShowThumb,
+              popupshow: ThePopShowData
+          }
+      }).$mount("#app");
+  })();

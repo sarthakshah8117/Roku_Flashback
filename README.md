@@ -1,68 +1,45 @@
-# ROKU FLASHBACK APP
+# THE ROKUFLASHBACK - FRONT END SIDE 
 
+## About
+This is front-end side of video streaming app where data has been fetched from database by connecting this part to server using proxy-middleware and display them on screen according to design templates.
 
+## Build with 
+* **HTML5**
+* **SASS/CSS3**
+* **JavaScript**
+* **Vue**
 
+## Installation 
+You need these to run the program:
 
----
-### Table of contents
+* NPM
+* express
+* mySql
+* hbs - js Handlebars
+* http-proxy-middleware
 
-- [Description](#description)
-- [References](#references)
-- [Author](#author)
+To install the packages: `npm install`
 
----
+## Contributing 
 
-## Description
+1. Fork it!
+2. Create your feature branch: `git checkout -b my-new-feature`
+3. Commit your changes: `git commit -am 'Add some feature'`
+4. Push to the branch: `git push origin my-new-feature`
+5. Submit a pull request :D
 
-Roku App is a video as well as audio streaming application where users can watch and listen movies or songs, respectively. However, this application will have few categories of "Adults and Kids". Kids will be restricted to some of the content. Keeping that in mind, this App will have Sign In feature which will decide the categories and will show up the content accordingly. 
+## Getting Started
+This is a basic HTML with Flex box and Grid layout. Some SASS, transitions and JavaScript function.
+If you don't know what any of these are, start here: www.mozilla.com
 
-There are be three steps:
-
-1. Sign In
-2. Adult
-3. Kids
-
-Developers [Roadmap](https://docs.google.com/document/d/19pRF6gML9Gd5t4NncPKjQXDEK2665yVQXOFw-Ckvzp0/edit?usp=sharing)
-
-Designers [Roadmap](https://docs.google.com/document/d/1s8NnAIA3kpAKYan4o267_Y7fTNko_-am0GAHz0DnSeI/edit?usp=sharing)
-
-
-### Technologies 
-
-Following are the softwares which will be used to design elements of portfolio and langauages that will used for coding:
-
-- Git bash
-- Visual Studio Code
-- Photoshop
-- illustrator
-- Adobe XD
-- HTML
-- CSS
-- Javascript
-- SASS
-- AJAX
-- Vue
-- MYSQL
-- PHP
-
----
-
-## References
-- W3schools
-- youtube
-- MDN learning
-
----
+Clone this to the location of your choice, open in your favourite editor and hack away!
 
 ## Author
+* Deepkumar Patel(0953510)
 
-Sarthak Shah
-Sabnit Kaur
+## References 
 
-## License 
-This project is lecensed under MIT
+Icon from [www.semantic-ui.com](https://semantic-ui.com/)
 
-
-
-
-
+## License
+MIT

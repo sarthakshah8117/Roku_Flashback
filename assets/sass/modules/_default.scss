@@ -1,0 +1,24 @@
+.closepopup{
+    transform: scale(0);
+    transition: transform 0.5s;
+}
+
+.show-data{
+    display: flex;
+}
+
+.dis-hidden{
+    display: none;
+}
+
+.dis-hidden {
+    display: none;
+}
+
+.filter-data{
+    filter: grayscale(0);
+}
+
+.welcome-user-user{
+    padding: 20px 50px;
+}
