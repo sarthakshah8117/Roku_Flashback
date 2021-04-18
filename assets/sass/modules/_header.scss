@@ -1,20 +1,27 @@
 .main-header{
     nav{
-        background-color: black;
+        background-color: #292929;
     }
-
+    
     nav ul li:hover {
-        background-color: white;
-        color: red;
-    }
+        background-color: wheat;
+        color: rebeccapurple;
+     }
 
-    li.active-nav{
-        background-color: grey;
+     li.active-nav{
+        background-color: rgba(white, 0.45);
     }
 }
 
-a.logo {
-    font-family: 'Courier New', Courier, monospace;
+a.brand-logo{
+    font-family: "Orbitron", sans-serif;
     font-weight: bolder;
     letter-spacing: 2px;
+}
+
+.dropdown-content{
+    margin-top: 20px;
+    a{
+        color: #000;
+    }
 }

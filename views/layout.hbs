@@ -5,35 +5,36 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/css/main.css">
-    <title>Roku Streaming Service</title>
+    <title>ROKU</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css" integrity="sha512-8bHTC73gkZ7rZ7vpqUQThUDhqcNFyYi2xgDgPDHc+GXVGHXq+xPjynxIopALmOPqzo9JZj0k6OqqewdGO3EsrQ==" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <div id="fb-root"></div>
+    <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v10.0" nonce="0a0imZO6"></script>
 </head>
 <body>
-        <main id="app">
-            {{!-- <header>
-                <div class="main-header">
-                    <nav>
-                        <div class="nav-wrapper">
-                            <div class="container">
-                                <a href="#" class="logo">ROKU</a>
-                                <ul class="nav-list">
-                                    <li><a href="#" class="active-nav">Movies</a></li>
-                                    <li><a href="/TVshows">TV Shows</a></li>
-                                    <li><a href="/music">Music</a></li>
-                                </ul>
-                            </div>
+    <main id="app">
+        <header>
+            <div class="main-header">
+                <nav>
+                    <div class="nav-wrapper">
+                        <div class="container">
+                            <a href="#" class="brand-logo">ROKU FLASHBACK</a>
+                            {{!-- How to add "active class according to routes dynamic" --}}
+                            <ul class="hide-on-med-and-down right">
+                                <li><a href="/">Movies</a></li>
+                                <li><a href="/shows">TV Shows</a></li>
+                                <li><a href="/music">Music</a></li>
+                            </ul>
+                            
                         </div>
-                    </nav>
-
-                </div>
-            </header> --}}
-            
-        <h1>Using HandleBars is Easy</h1>
-        <h3>What follows is dynamic, server-side rendered content</h3>
-        <!-- this is where handlebars will inject its templates-->
-        <!-- this is like php include statement -->
+                    </div>
+                </nav>          
+        </header>
+  
         {{{ body }}}
+
     </main>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-    <script defer type="module" src="scripts/main.js"></script>
+    <script defer type="module" src="/scripts/main.js"></script>
 </body>
 </html>
