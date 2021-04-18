@@ -7,9 +7,9 @@ export default{
 
     template:`
         <div class="song-box">
-            <img @click="thumbSelected" :src='"/images/music/" + music.thumbnail' alt="music thumb" :class="{'filter-data' : filter_image }">
+            <img @click="thumbSelected" :src='"/music/" + music.thumbnail' alt="music thumb" :class="{'filter-data' : filter_image }">
             <p>{{music.song_name}}</p>
-            <p>-By {{music.singer}}</p>
+            
         </div>
     `,
 
