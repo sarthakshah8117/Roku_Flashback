@@ -1,16 +1,17 @@
 
-<section class="movie-section">
-    <p class="main-title">Watch a Movie Tonight!</p>
+<section class="movie-set">
+    <p class="main-title">Watch a Movie Tonight</p>
     <div class="movie-container">
-        <moviethumb @showmoviedata="movieImageSelected" v-for="item in allMovies" :movie="item" :key="item.movie_id"></moviethumb>
+        <moviethumb @showmoviedata="movieImageSelected" v-for="item in allMovies" :movie="item" :key="item.movies_id"></moviethumb>
+
     </div>
 </section>
 
 <section class="pop-box" v-if="show_movie_data">
     <div class="close-button">
-            <span @click="closePopup">X</span>
+        <span @click="closePopup">X</span>
     </div>
     <div>
-        <popupmovie :trailer="moviesdb.movies_cover" :title="moviesdb.movies_title" :date="moviesdb.movies_release" :runtime="moviesdb.movies_runtime" :about="moviesdb.movies_storyline"  :key="movies_id"></popupmovie>
+        <popupmovie :trailer="moviesdb.movies_cover" :title="moviesdb.movies_title" :date="moviesdb.movies_release" :runtime="moviesdb.movies_runtime" :about="moviesdb.movies_storyline" :key="movies_id"></popupmovie>
     </div>
-</section>   
+</section>

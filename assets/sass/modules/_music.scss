@@ -1,8 +1,5 @@
-.music-section{
-    // display: flex;
-    // flex-direction: column;
-    // justify-content: space-evenly;
-    // align-items: center;
+.music-set{
+   
     display: inline-block;
     text-align: center;
 
@@ -12,7 +9,7 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    // background: red;
+    
 
     p:nth-child(1){
         font-size: 1.5rem;
@@ -26,8 +23,6 @@
     .music-container{
         width: 90%;
         margin: auto;
-        // display: flex;
-        // justify-content: space-evenly;
         margin-top: 100px;
         display: grid;
         grid-template-columns:repeat(auto-fit, minmax(300px, 1fr));
@@ -71,7 +66,6 @@
     }
 }
 
-// AUDIO SECTION
 .audio-section{
     width: 100%;
     background: #000;
@@ -137,17 +131,7 @@
             flex:1;
             audio{
                 width: 100%;
-                // background: none;
             }
         }
-    }
-}
-
-@media only screen and (max-width:768px){
-    .audio-component-bar .song-detail p{
-        display: none;
-    }
-    .audio-component-bar audio{
-        padding-left: 10px;
     }
 }

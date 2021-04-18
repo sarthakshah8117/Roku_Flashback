@@ -1,4 +1,7 @@
 import Vue from 'https://cdn.jsdelivr.net/npm/vue@2.6.12/dist/vue.esm.browser.js';
+
+
+
 import TheMovieThumb from './components/TheMovieThumbnailComp.js';
 import TheShowThumb from './components/TheShowThumbnailComp.js';
 import TheMusicThumb from './components/TheMusicThumbnailComp.js';
