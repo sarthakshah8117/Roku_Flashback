@@ -1,4 +1,4 @@
-.movie-section {
+.movie-set {
   display: inline-block;
   text-align: center;
   width: 100%;
@@ -8,44 +8,44 @@
   left: 50%;
   transform: translate(-50%, -50%);
 }
-.movie-section p:nth-child(1) {
+.movie-set p:nth-child(1) {
   font-size: 2rem;
   font-weight: bolder;
   letter-spacing: 10px;
   color: black;
 }
-.movie-section .movie-container {
+.movie-set .movie-container {
   width: 90%;
   margin: auto;
   margin-top: 100px;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
 }
-.movie-section .movie-container .song-box {
+.movie-set .movie-container .song-box {
   text-align: center;
   margin-bottom: 80px;
 }
-.movie-section .movie-container .song-box img {
+.movie-set .movie-container .song-box img {
   filter: grayscale(0);
   transition: filter 0.25s ease;
 }
-.movie-section .movie-container .song-box p {
+.movie-set .movie-container .song-box p {
   font-family: Helvetica, sans-serif;
   font-size: 1.095rem;
   font-weight: bold;
   text-align: center;
   filter: grayscale(1);
 }
-.movie-section .movie-container .song-box:hover {
+.movie-set .movie-container .song-box:hover {
   cursor: pointer;
 }
-.movie-section .movie-container .song-box:hover img {
+.movie-set .movie-container .song-box:hover img {
   filter: grayscale(1);
 }
-.movie-section .movie-container .song-box:hover p:nth-child(2) {
+.movie-set .movie-container .song-box:hover p:nth-child(2) {
   color: lightseagreen;
 }
-.movie-section .movie-container .song-box:hover p:nth-child(3) {
+.movie-set .movie-container .song-box:hover p:nth-child(3) {
   float: left;
 }
 
@@ -76,7 +76,6 @@ a.brand-logo {
 .pop-box {
   width: 100%;
   height: 100%;
-  background: chartreuse;
   position: absolute;
   top: 7%;
   left: 0;
@@ -131,29 +130,7 @@ a.brand-logo {
   color: #fff;
 }
 
-@media screen and (max-width: 1400px) {
-  .pop-box {
-    width: 100%;
-  }
-  .pop-box .close-button {
-    padding: 20px 100px;
-  }
-  .pop-box .screen-box .details {
-    width: 50%;
-  }
-}
-@media screen and (max-width: 768px) {
-  .pop-box {
-    width: 100%;
-  }
-  .pop-box .close-button {
-    padding: 20px 20px;
-  }
-  .pop-box .screen-box .details {
-    width: 90%;
-  }
-}
-.music-section {
+.music-set {
   display: inline-block;
   text-align: center;
   width: 100%;
@@ -163,7 +140,7 @@ a.brand-logo {
   left: 50%;
   transform: translate(-50%, -50%);
 }
-.music-section p:nth-child(1) {
+.music-set p:nth-child(1) {
   font-size: 1.5rem;
   font-family: Arial, Helvetica, sans-serif;
   font-weight: bolder;
@@ -171,43 +148,43 @@ a.brand-logo {
   letter-spacing: 1px;
   color: #434343;
 }
-.music-section .music-container {
+.music-set .music-container {
   width: 90%;
   margin: auto;
   margin-top: 100px;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
 }
-.music-section .music-container .song-box {
+.music-set .music-container .song-box {
   text-align: center;
   margin-bottom: 80px;
 }
-.music-section .music-container .song-box img {
+.music-set .music-container .song-box img {
   border-radius: 20px;
   filter: grayscale(1);
   transition: filter 0.25s ease;
 }
-.music-section .music-container .song-box p:nth-child(2) {
+.music-set .music-container .song-box p:nth-child(2) {
   font-family: Helvetica, sans-serif;
   font-size: 1.095rem;
   font-weight: bold;
   filter: grayscale(1);
 }
-.music-section .music-container .song-box p:nth-child(3) {
+.music-set .music-container .song-box p:nth-child(3) {
   float: right;
   font-family: Helvetica, sans-serif;
   transition: float 2s ease-in;
 }
-.music-section .music-container .song-box:hover {
+.music-set .music-container .song-box:hover {
   cursor: pointer;
 }
-.music-section .music-container .song-box:hover img {
+.music-set .music-container .song-box:hover img {
   filter: grayscale(0);
 }
-.music-section .music-container .song-box:hover p:nth-child(2) {
+.music-set .music-container .song-box:hover p:nth-child(2) {
   color: lightseagreen;
 }
-.music-section .music-container .song-box:hover p:nth-child(3) {
+.music-set .music-container .song-box:hover p:nth-child(3) {
   float: left;
 }
 
@@ -271,15 +248,6 @@ a.brand-logo {
   width: 100%;
 }
 
-@media only screen and (max-width: 768px) {
-  .audio-component-bar .song-detail p {
-    display: none;
-  }
-
-  .audio-component-bar audio {
-    padding-left: 10px;
-  }
-}
 .error-box {
   width: 100%;
   height: 100vh;
