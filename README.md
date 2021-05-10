@@ -35,7 +35,7 @@ If you don't know what any of these are, start here: www.mozilla.com
 Clone this to the location of your choice, open in your favourite editor and hack away!
 
 ## Author
-* Deepkumar Patel(0953510)
+* Sarthak Shah
 
 ## References 
 
